@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VanillaJS TODO list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="pageTitle">TODO list</h1>
+  <h5 id="total"># of TODO: 0</h5>
+  <h5 id="filteredTotal"># of filtered TODO: 0</h5>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <select name="pageSize" id="pageSize">
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+          </select>
+        </th>
+        <th>
+          <input type="text" name="" id="newTodoText" placeholder="Insert something here">
+        </th>
+        <th>
+          <input type="button" id="addTodoButton" value="Submit">
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3">
+          <div id="todoList">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td id="prev"><</td>
+        <td id="pages">
+          <p id="pageNumber">You are on page 1</p>
+        </td>
+        <td id="next">></td>
+      </tr>
+      <tr>
+        <td><label for="filterTodos">Filter:</label></td>
+        <td><input type="text" name="filterTodos" id="filterTodos" placeholder="Filter TODOs"></td>
+        <td><input type="button" id="searchTodoButton" value="Search"></td>
+      </tr>
+    </tfoot>
+  </table>
+  <div id="saveFeedback" class="confirm notVisible">
+    The element has been saved
+  </div>
+  <div id="deleteFeedback" class="confirm notVisible">
+    The element has been deleted
+  </div>
+  <script src="./todoModel.js"></script>
+  <script src="./todoView.js"></script>
+  <script src="./todoController.js"></script>
+</body>
+</html>
