@@ -4,7 +4,7 @@
 
 This is a test to asses your competence in JavaScript.
 
-## 1 Coding exercise
+## 1. Coding exercise
 
 Implement, using plain ES5 JavaScript (ES6+ not allowed) or jQuery, a very simple TODOs list application that runs in the browser without any backend. 
 
@@ -20,6 +20,6 @@ Here are the main use cases:
 6. *Bonus use case*: the application should be able to offer some form of pagination for the TODOs.
 7. *Bonus use case*: the application should offer some free text filtering of the TODOs.
 
-## 2 Testing exercise
+## 2. Testing exercise
 
 Please set up a unit testing infrastructure that allows to test the code you have created during step 1.
